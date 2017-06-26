@@ -17,6 +17,25 @@
 </div>
 
 <div class='leader_board'>
-
+  <div class='star_wars_leader_board'>
+    <h3>Star Wars Leader Board</h3>
+    <ul>
+      <% @star_wars.each do |character| %>
+        <li>
+          <%= "#{character.name} - #{character.wins} wins" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class='pokemon_leader_board'>
+    <h3>Pokemon Leader Board</h3>
+    <ul>
+      <% @pokemons.each do |character| %>
+        <li>
+          <%= "#{character.name} - #{character.wins} wins" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
